@@ -4,8 +4,7 @@ using System.Text;
 
 namespace Entities.Abstract
 {
-    public class IEntitiy
+    public interface IEntity
     {
-
     }
 }
