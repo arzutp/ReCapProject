@@ -18,8 +18,10 @@ namespace Console
             //CarTest(carManager);
             //BrandTest(brandManager);
             //ColorTest(colorManager);
+            RentalCar();
 
-            
+
+
 
 
             System.Console.WriteLine("------join işlemi sonucu gelen değerler----------");
@@ -46,6 +48,13 @@ namespace Console
 
         }
 
+        private static void RentalCar()
+        {
+            RentalManager rentalManager = new RentalManager(new EfRentalDal());
+            var result = rentalManager.Add(new Rental { CarId = 1002, CustomerId = 2, RentDate = DateTime.Now, 
+                ReturnDate = new DateTime(2021, 04, 12) });
+            System.Console.WriteLine(result.Message); 
+        }
 
 
 
