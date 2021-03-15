@@ -15,9 +15,8 @@ namespace Console
             ICarService carManager = new CarManager(new EfCarDal());
             IBrandService brandManager = new BrandManager(new EfBrandDal());
             IColorService colorManager = new ColorManager(new EfColorDal());
-            //CarTest(carManager);
-            //BrandTest(brandManager);
-            //ColorTest(colorManager);
+            
+
             //RentalCar();
 
             IUserService userManager = new UserManager(new EfUserDal());
