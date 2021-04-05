@@ -12,7 +12,6 @@ namespace Business.Constants
         public static string NameInvalid = "Ürün ismi geçersiz";
         public static string MaintenanceTime = "Sistem bakımda";
         public static string Listed = "Ürünler listelendi";
-        
-
+        public static string CarCheckImageLimited = "En fazla 5 resim olabilir";
     }
 }
